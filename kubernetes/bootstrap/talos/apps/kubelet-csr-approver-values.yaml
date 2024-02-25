@@ -1,0 +1,3 @@
+---
+providerRegex: ^(Master1|Master2|Master3|Worker1|Worker2|Worker3)$
+bypassDnsResolution: true
