@@ -224,7 +224,7 @@ spec:
           enabled: true
           ingressClassName: internal
           host:
-            name: &host rgw.devbu.io
+            name: &host rgw.bharris.xyz
             path: /
           tls:
             - hosts:
