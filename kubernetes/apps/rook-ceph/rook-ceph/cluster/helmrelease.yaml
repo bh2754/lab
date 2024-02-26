@@ -85,11 +85,29 @@ spec:
         urlPrefix: /
         ssl: false
       storage:
-        useAllNodes: true
-        useAllDevices: true
-        deviceFilter: nvme0n1
+        useAllNodes: false
+        useAllDevices: false
         config:
           osdsPerDevice: "1"
+        nodes:
+          - name: master1
+            devices:
+              - name: "/dev/sdb"
+          - name: master2
+            devices:
+              - name: "/dev/sdb"
+          - name: master3
+            devices:
+              - name: "/dev/sdb"
+          - name: worker1
+            devices:
+              - name: "/dev/sdb"
+          - name: worker2
+            devices:
+              - name: "/dev/sdb"
+          - name: worker3
+            devices:
+              - name: "/dev/sdb"
       placement:
         mgr: &placement
           nodeAffinity:
