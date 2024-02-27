@@ -7,4 +7,5 @@ resources:
   - ./kubelet-csr-approver/ks.yaml
   - ./metrics-server/ks.yaml
   - ./spegel/ks.yaml
+  - ./snapshot-controller/ks.yaml
   - ./reloader/ks.yaml
