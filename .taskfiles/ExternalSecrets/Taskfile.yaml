@@ -10,7 +10,7 @@ tasks:
       Args:
         ns: Namespace the externalsecret is in (default: default)
         secret: Secret to sync (required)
-    cmd: kubectl --context -n {{.ns}} annotate externalsecret {{.secret}} force-sync=$(date +%s) --overwrite
+    cmd: kubectl -n {{.ns}} annotate externalsecret {{.secret}} force-sync=$(date +%s) --overwrite
     env:
       KUBECONFIG: "{{.KUBERNETES_DIR}}/kubeconfig"
     requires:
@@ -18,7 +18,7 @@ tasks:
     vars:
       ns: '{{.ns | default "default"}}'
     preconditions:
-      - kubectl --context -n {{.ns}} get externalsecret {{.secret}}
+      - kubectl  -n {{.ns}} get externalsecret {{.secret}}
 
   sync-all:
     desc: Sync all ExternalSecrets for a cluster
