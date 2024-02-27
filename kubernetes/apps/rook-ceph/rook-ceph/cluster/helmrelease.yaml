@@ -92,22 +92,22 @@ spec:
         nodes:
           - name: master1
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
           - name: master2
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
           - name: master3
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
           - name: worker1
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
           - name: worker2
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
           - name: worker3
             devices:
-              - name: "/dev/sdb"
+              - name: "/dev/sdb1"
       placement:
         mgr: &placement
           nodeAffinity:
