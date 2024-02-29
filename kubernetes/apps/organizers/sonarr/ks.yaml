@@ -9,8 +9,8 @@ metadata:
 spec:
   dependsOn:
     - name: cluster-apps-onepassword-connect
-    - name: cluster-apps-pod-gateway
-    - name: cluster-rook-ceph-cluster
+    - name: apps-pod-gateway
+    - name: rook-ceph-cluster
   path: ./kubernetes/apps/organizers/sonarr/app
   prune: true
   sourceRef:
