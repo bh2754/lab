@@ -48,8 +48,10 @@ spec:
         containers:
           main:
             image:
-              repository: ghcr.io/bh2754/sonarr-develop
-              tag: 4.0.1.1131@sha256:a070de7c60a74b8ed9b81bea2399688c2f799823b6f0c6b8597f906cb400ed0e
+#             repository: ghcr.io/bh2754/sonarr-develop
+#             tag: 4.0.1.1131@sha256:a070de7c60a74b8ed9b81bea2399688c2f799823b6f0c6b8597f906cb400ed0e
+              repository: ghcr.io/onedr0p/sonarr-develop
+              tag: 4.0.2.1192@sha256:ac08c06ba9216f0bb54e1888f3a23a6091db7d54da3bfdad3e6a5366e778528f
             env:
               SONARR__INSTANCE_NAME: Sonarr
               SONARR__PORT: &port 8989
@@ -66,12 +68,6 @@ spec:
                 memory: 323M
               limits:
                 memory: 323M
-#         netshoot:
-#           image:
-#             repository: ghcr.io/nicolaka/netshoot
-#             tag: v0.12
-#           command: ["/bin/bash"]
-#           args: ["-c", "while true; do ping localhost; sleep 60;done"]
 
     service:
       main:
