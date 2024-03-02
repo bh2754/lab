@@ -9,7 +9,7 @@ spec:
   chart:
     spec:
       chart: app-template
-      version: 2.6.0
+      version: 2.4.0
       sourceRef:
         kind: HelmRepository
         name: bjw-s
@@ -95,7 +95,7 @@ spec:
 #          sub_filter '</head>' '<link rel="stylesheet" type="text/css" href="https://theme-park.${SECRET_DOMAIN}/css/base/lidarr/hotline.css"></head>';
 #           sub_filter_once on;
         hosts:
-          - host: &host "sonarr.${SECRET_DOMAIN}"
+          - host: &host "sonarr.bharris.xyz"
             paths:
               - path: /
                 service:

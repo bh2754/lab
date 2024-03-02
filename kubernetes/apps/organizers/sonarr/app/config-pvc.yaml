@@ -4,9 +4,9 @@ kind: PersistentVolumeClaim
 metadata:
   name: sonarr-config-v1
   namespace: organizers
-  labels:
-    app.kubernetes.io/name: &name sonarr
-    app.kubernetes.io/instance: *name
+# labels:
+#   app.kubernetes.io/name: &name sonarr
+#   app.kubernetes.io/instance: *name
 spec:
   accessModes:
     - ReadWriteOnce
