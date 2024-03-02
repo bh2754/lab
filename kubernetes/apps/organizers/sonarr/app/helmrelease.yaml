@@ -106,12 +106,12 @@ spec:
       media:
         enabled: true
         type: nfs
-        server: "${NFS_SERVER}"
-        path: "${NFS_MEDIA}"
+        server: 10.0.109.29
+        path: /volume1/Media
         mountPath: /media
       download:
         enabled: true
         type: nfs
-        server: "${NFS_SERVER}"
-        path: "${NFS_DOWNLOAD}"
+        server: 10.0.109.29
+        path: /volume1/Download
         mountPath: /download
